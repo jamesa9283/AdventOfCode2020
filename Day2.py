@@ -1017,7 +1017,7 @@ for j in comp:
     nums = j[0].split("-")
     letter = j[1][0]
     password = j[2]
-    if (password[int(nums[0])-1] == letter) and (password[int(nums[1])-1] != letter):
+    if (password[int(nums[0])-1] != password[int(nums[1])-1]) and (password[int(nums[0])-1] == letter or password[int(nums[1])-1] == letter):
         n = n + 1
 print(n)
 
