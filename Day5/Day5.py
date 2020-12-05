@@ -38,7 +38,7 @@ for code in passes:
     c = cbins(code, cup, clw)
     sID = 8 * r + c
     ids.append(sID)
-print(sorted(ids))
+#print(sorted(ids))
     
 for i in ids:
     if (i + 1) not in ids:
@@ -46,6 +46,6 @@ for i in ids:
     
     
     
-print(cbins('FBFBBFFRLR', cup, clw))
+#print(cbins('FBFBBFFRLR', cup, clw))
 
 
