@@ -21,8 +21,9 @@ for ans in entries:
     ans = []
     for i in range(len(rep)):
         for j in range(len(rep[i])):
-            if rep[i][j] not in ans: # you can probably use `set` here
-                ans.append(rep[i][j])
-    res += len(ans)
+            ans.append(rep[i][j])
+        for lett in set(ans):
+            if ans.count(lett) == len(rep):
+                res += 1
     
 print(res)
